@@ -30,8 +30,10 @@ GPT is pre-trained on a large and diverse corpus of text (like books, articles, 
 ### Fine-tuning Phase(GPT):
 After the pretraining, GPT can be fine-tuned for specific tasks (e.g., text classification, sentiment analysis, summarization) by training it on smaller, task-specific datasets. During fine-tuning, the model adjusts its weights based on the target task, while retaining the knowledge it gained from the pretraining phase.
 ### Benefits(GPT):
-Scalability: Since GPT is already pretrained, only task-specific data is needed for fine-tuning.
-Generalization: Pretraining on a broad range of topics enables GPT to generalize well to different types of tasks.
+#### Scalability: 
+Since GPT is already pretrained, only task-specific data is needed for fine-tuning.
+#### Generalization:
+Pretraining on a broad range of topics enables GPT to generalize well to different types of tasks.
 BERT (Bidirectional Encoder Representations from Transformers)
 BERT is another transformer-based model by Google that takes a different approach, particularly its bidirectional nature, where GPT only processes text in one direction (left to right), BERT processes text in both directions (left to right and right to left). This allows BERT to understand the context of a word more comprehensively.
 
@@ -48,14 +50,18 @@ Bidirectional Context: BERT's bidirectional architecture allows it to capture ri
 Pretraining on a Variety of Tasks: BERT's pretraining objectives (MLM and NSP) help it perform well on a wide range of tasks.
 
 Key Differences Between GPT and BERT in Transfer Learning
-Training Objective:
-GPT: Trained as a language model with a causal (unidirectional) approach, predicting the next token in a sequence.
-BERT: Trained as a masked language model with a bidirectional context, considering both past and future context in predicting words.
-Use Case:
+#### Training Objective:
+#### GPT: 
+Trained as a language model with a causal (unidirectional) approach, predicting the next token in a sequence.
+#### BERT:
+ Trained as a masked language model with a bidirectional context, considering both past and future context in predicting words.
+
+#### Use Case:
 
 GPT is mainly used for generative tasks (e.g., text generation, completion).
 BERT is better suited for discriminative tasks (e.g., text classification, named entity recognition).
-Architecture:
+
+#### Architecture:
 
 GPT uses a decoder-only architecture (left-to-right).
 BERT uses an encoder-only architecture (bidirectional)
