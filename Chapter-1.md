@@ -25,28 +25,30 @@ Transfer learning in Natural Language Processing (NLP) refers to leveraging a pr
 GPT (Generative Pretrained Transformer)
 GPT (Generative Pretrained Transformer) is a language model developed by OpenAI. Transfer learning with GPT typically works in the following way:
 
-Pretraining Phase:
+### Pretraining Phase:
 GPT is pre-trained on a large and diverse corpus of text (like books, articles, and websites). It learns to predict the next word in a sentence, which allows it to understand grammar, syntax, and a broad understanding of language. This step is unsupervised, and GPT learns from vast amounts of general data.
-Fine-tuning Phase:
+### Fine-tuning Phase:
 After the pretraining, GPT can be fine-tuned for specific tasks (e.g., text classification, sentiment analysis, summarization) by training it on smaller, task-specific datasets. During fine-tuning, the model adjusts its weights based on the target task, while retaining the knowledge it gained from the pretraining phase.
-Benefits:
+### Benefits:
 Scalability: Since GPT is already pretrained, only task-specific data is needed for fine-tuning.
 Generalization: Pretraining on a broad range of topics enables GPT to generalize well to different types of tasks.
 BERT (Bidirectional Encoder Representations from Transformers)
 BERT is another transformer-based model by Google that takes a different approach, particularly its bidirectional nature, where GPT only processes text in one direction (left to right), BERT processes text in both directions (left to right and right to left). This allows BERT to understand the context of a word more comprehensively.
 
-Pretraining Phase:
-BERT is trained on large corpora of text using two tasks: Masked Language Modeling (MLM) and Next Sentence Prediction (NSP).
+### Pretraining Phase:
+
+BERT is trained on large corpora of text using two tasks: Masked Language Modeling (MLM) and Next 
+Sentence Prediction (NSP).
 MLM involves randomly masking some words in a sentence and training the model to predict the masked word using the surrounding context.
 NSP helps the model learn the relationship between sentences.
-Fine-tuning Phase:
+### Fine-tuning Phase:
 After pretraining, BERT is fine-tuned for specific NLP tasks such as question answering, named entity recognition (NER), or sentiment analysis. Fine-tuning uses task-specific labeled datasets to adjust the model’s weights for optimal performance.
-Benefits:
+### Benefits:
 Bidirectional Context: BERT's bidirectional architecture allows it to capture richer context for each word, improving task-specific performance, especially for tasks that require understanding the relationship between words or sentences.
 Pretraining on a Variety of Tasks: BERT's pretraining objectives (MLM and NSP) help it perform well on a wide range of tasks.
+
 Key Differences Between GPT and BERT in Transfer Learning
 Training Objective:
-
 GPT: Trained as a language model with a causal (unidirectional) approach, predicting the next token in a sequence.
 BERT: Trained as a masked language model with a bidirectional context, considering both past and future context in predicting words.
 Use Case:
