@@ -22,7 +22,7 @@ The Encoder-Decoder architecture in transformers is designed for sequence-to-seq
 
 Transfer learning in Natural Language Processing (NLP) refers to leveraging a pre-trained model on a large dataset and fine-tuning it on a smaller, domain-specific dataset to improve performance on a particular task. This approach saves time, resources, and computational costs while also improving the accuracy of models, especially when data is scarce.
 
-GPT (Generative Pretrained Transformer)
+
 GPT (Generative Pretrained Transformer) is a language model developed by OpenAI. Transfer learning with GPT typically works in the following way:
 
 ### Pretraining Phase(GPT):
