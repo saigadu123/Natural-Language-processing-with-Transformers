@@ -10,5 +10,5 @@ The encoder-decoder framework is a neural network architecture commonly used for
 
 The attention mechanism in an encoder-decoder framework allows the decoder to focus on specific parts of the input sequence while generating each output token. Instead of relying solely on the encoder's final hidden state, it computes a weighted sum of all encoder hidden states, where the weights indicate the relevance of each input token to the current decoding step. These weights are learned dynamically based on the decoder's state and the encoder outputs. This approach helps capture long-range dependencies and improves performance on tasks like translation or summarization. Attention thus enhances flexibility and context awareness in sequence-to-sequence models.
 
-![Attention-mechanism-in-Encoder-Decoder-framework](images/Attention Mechanism.png)
+![Attention-mechanism](images/Attention-Mechanism.png)
 
