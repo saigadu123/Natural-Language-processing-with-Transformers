@@ -67,3 +67,20 @@ GPT uses a decoder-only architecture (left-to-right).
 BERT uses an encoder-only architecture (bidirectional)
 
 ![transfer-learning](images/Transfer%20Learning.png)
+
+# Main challanges with Transformers
+
+### Language 
+  - pre-trained Transformers with low resource languages are very rare.
+
+### Data Availability
+  - Gathering the enough amount of data to perform the task.
+
+### Working with long documents
+  - Training transformers with huge amount of data requires huge investment.
+
+### Opacity
+  - Explaining or justifing the decision taken by LLM is hard and challanging.
+
+### Bias 
+  - Transformers predominantly trains on large amount of internet data which is biased like racist,sexist or worse.
